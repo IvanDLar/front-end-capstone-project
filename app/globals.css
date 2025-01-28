@@ -29,9 +29,11 @@
 
 html,
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   max-width: 100vw;
   overflow-x: hidden;
-  margin: 0px 40px 0px 40px;
 }
 
 body {
@@ -62,20 +64,22 @@ main {
 }
 
 nav {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   padding: 20px 50px 20px 50px;
-  position: sticky;
   top: 0;
   overflow: hidden;
+  margin-top: auto;
+  background-color: var(--background);
+  width: 100%;
 }
 
 footer {
-  color: var(--black);
-}
-
-header {
-  color: var(--black);
+  margin-top: auto;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-around;
 }
 
 @media (prefers-color-scheme: dark) {

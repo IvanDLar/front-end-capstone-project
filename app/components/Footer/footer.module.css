@@ -1,0 +1,20 @@
+.footer-text-section {
+    display: flex;
+}
+
+.footer-text-column {
+    margin: 20px
+}
+
+.footer-title {
+    font-size: var(--card-title-font-size);
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+.footer-text {
+    line-height: 1.5;
+    font-size: var(--paraparagraph-font-size);
+    font-weight: regular;
+}
+

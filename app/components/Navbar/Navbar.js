@@ -1,4 +1,4 @@
-import styles from "../page.module.css";
+import styles from "./navbar.module.css";
 import Image from "next/image";
 
 import { Karla } from 'next/font/google'

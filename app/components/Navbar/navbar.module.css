@@ -1,0 +1,23 @@
+.list-section {
+    align-content: center;
+  }
+
+.list {
+    display: flex;
+    flex-direction: row;
+  }
+
+.list-element {
+    margin: 0px 10px 0 10px;
+  }
+
+.list-element-text {
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+.list-element-text:hover {
+    transition: 0.5s;
+    font-weight: bold;
+    color: var(--primary-color-1)
+  }

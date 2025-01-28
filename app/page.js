@@ -6,6 +6,11 @@ import Navbar from "./components/Navbar/Navbar"
 
 import styles from "./page.module.css";
 
+export const metadata = {
+  title: 'Little Lemon Restaurant',
+  description: 'Mediterranean restaurant specialized in Greek cuisine.',
+  image: "./little-lemon-logo.svg",
+}
 export default function Home() {
   return (
     <>

@@ -48,7 +48,7 @@ export default function Footer() {
                     </h3>
                     <ul>
                         <li className={`${styles["footer-text"]} ${karla.className}`}>
-                            Address
+                            <a>Address</a>
                         </li>
                         <li className={`${styles["footer-text"]} ${karla.className}`}>
                             Phone Number

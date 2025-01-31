@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Markazi+Text:wght@400..700&display=swap');
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -13,12 +15,9 @@
   --black: #111111;
   --white: #FFFFFF;
 
+  --karla-font: 'Karla', sans-serif;
+  --markazi-text: 'Markazi Text, sans-serif';
 
-  /* Hover Colors */
-  --primary-color-hover: #dfa618;
-
-  /* Glow Colors */
-  --primary-color-glow: #ffc83cea;
 
   /* Font Sizes */
   --title-font-size: 64px;
@@ -70,7 +69,6 @@ nav {
   padding: 20px 50px 20px 50px;
   top: 0;
   overflow: hidden;
-  margin-top: auto;
   background-color: var(--background);
   width: 100%;
 }

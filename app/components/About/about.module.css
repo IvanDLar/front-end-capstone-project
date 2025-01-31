@@ -1,0 +1,37 @@
+.about-section {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 5rem;
+}
+
+.about-left-section {
+    width: 50%;
+    display: flex;
+    margin-right: 1rem;
+    flex-direction: column;
+}
+
+.about-text {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.about-right-section {
+    width: 50%;
+    margin-left: 1rem;
+    display: flex;
+}
+
+
+.page-title {
+    font-family: var(--markazi-text);
+    font-size: var(--title-font-size);
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+}
+
+.about-description {
+    font-family: var(--karla-font);
+    font-size: var(--paragraph-font-size);
+}

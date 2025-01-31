@@ -1,0 +1,28 @@
+.specials-section {
+    margin-bottom: 5rem;
+}
+
+.first-specials-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.25rem 0.15rem 5rem 0.15rem;
+}
+
+.page-title {
+    font-family: var(--markazi-text);
+    font-size: var(--title-font-size);
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+}
+
+.specials-menu-button {
+    height: 50%;
+}
+
+.card-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows wrapping if needed */
+    gap: 1rem; /* Optional: Adds uniform spacing */
+}

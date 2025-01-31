@@ -1,0 +1,39 @@
+.specials-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    box-shadow: 0px 10px 3px -6px #c4c4c4;
+    width: 30%; /* Adjust based on how many cards per row */
+    min-width: 200px; /* Prevents extreme shrinking */
+}
+.card-info-section {
+    margin: 1rem 1rem;
+}
+
+.card-first-row {
+    margin: 0 0 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-family: var(--karla-font);
+    font-size: var(--card-title-font-size);
+    font-weight: bold;
+}
+
+.card-description {
+    margin: 0 0 3rem 0;
+}
+
+.order-delivery {
+    font-family: var(--karla-font);
+    font-size: var(--paragraph-font-size);
+    color: var(--secondary-color-1);
+    cursor: pointer;
+}
+
+.order-delivery:hover {
+    color: #f0804c;
+    font-weight: bold;
+}

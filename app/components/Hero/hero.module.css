@@ -1,0 +1,48 @@
+.hero-section {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 5rem;
+}
+
+.hero-left-section {
+    width: 50%;
+    display: flex;
+    margin-right: 1rem;
+    flex-direction: column;
+}
+
+.hero-text {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.hero-right-section {
+    width: 50%;
+    margin-left: 1rem;
+    display: flex;
+}
+
+.button-section {
+    display: flex;
+    width: 100%;
+}
+
+.page-title {
+    font-family: var(--markazi-text);
+    font-size: var(--title-font-size);
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+}
+
+.page-sub-title {
+    font-family: var(--markazi-text);
+    font-size: var(--sub-title-font-size);
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.hero-description {
+    font-family: var(--karla-font);
+    font-size: var(--paragraph-font-size);
+}

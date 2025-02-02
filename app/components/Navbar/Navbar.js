@@ -1,5 +1,7 @@
 import styles from "./navbar.module.css";
 import Image from "next/image";
+import Link from 'next/link'
+
 
 import { Karla } from 'next/font/google'
  
@@ -22,33 +24,28 @@ export default function Navbar() {
             <div className = {styles["list-section"]}>
                 <ul className = {styles.list}>
                     <li className = {styles["list-element"]}>
-                        <a className = {`${karla.className} ${styles["list-element-text"]}`}>
+                        <a className = {`${karla.className} ${styles["list-element-text"]}`} href="/">
                             Home
                         </a>
                     </li>
                     <li className = {styles["list-element"]}>
-                        <a className = {`${karla.className} ${styles["list-element-text"]}`}>
+                        <a className = {`${karla.className} ${styles["list-element-text"]}`} href="/#about">
                             About
                         </a>
                     </li>
                     <li className = {styles["list-element"]}>
-                        <a className = {`${karla.className} ${styles["list-element-text"]}`}>
+                        <a className = {`${karla.className} ${styles["list-element-text"]}`} href="/#menu">
                             Menu
                         </a>
                     </li>
                     <li className = {styles["list-element"]}>
-                        <a className = {`${karla.className} ${styles["list-element-text"]}`}>
-                            Reservations
-                        </a>
+                        <Link className = {`${karla.className} ${styles["list-element-text"]}`} href="/booking">
+                            Booking
+                        </Link>
                     </li>
                     <li className = {styles["list-element"]}>
-                        <a className = {`${karla.className} ${styles["list-element-text"]}`}>
-                            Order Online
-                        </a>
-                    </li>
-                    <li className = {styles["list-element"]}>
-                        <a className = {`${karla.className} ${styles["list-element-text"]}`}>
-                            Login
+                        <a className = {`${karla.className} ${styles["list-element-text"]}`} href="/">
+                            Log in
                         </a>
                     </li>
                 </ul>

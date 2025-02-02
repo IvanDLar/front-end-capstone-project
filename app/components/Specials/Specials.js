@@ -4,7 +4,7 @@ import styles from "./specials.module.css"
 
 export default function Specials(props) {
     return (
-        <div className = {styles["specials-section"]}>
+        <div id = "menu" className = {styles["specials-section"]}>
             <div className = {styles["first-specials-row"]}>
                 <h1 className = {styles["page-title"]}>
                     Specials

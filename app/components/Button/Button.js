@@ -13,6 +13,7 @@ export default function Button(props) {
     const sizeMap = {
         "large": styles["button-large"],
         "medium": styles["button-medium"],
+        "medium-link": styles["button-medium-link"],
         "small": styles["button-small"],
     };
 
@@ -24,6 +25,10 @@ export default function Button(props) {
     const buttonStyle = typeMap[type];
     const buttonSize = sizeMap[size];
     return (
-        <button className={`${styles.button} ${buttonStyle} ${buttonSize}`}>{text}</button>
+        <button className={`${styles.button} ${buttonStyle} ${buttonSize}`}
+                onClick={props.onClick || null}
+                type = {props.buttonType || null}>
+                    {text}
+        </button>
     );
 };

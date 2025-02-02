@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Hero() {
     return(
-    <article className = {styles["hero-section"]}>
+    <article id = "home" className = {styles["hero-section"]}>
         <div className = {styles["hero-left-section"]}>
           <div className = {styles["hero-text"]}>
             <h1 className = {styles["page-title"]}>

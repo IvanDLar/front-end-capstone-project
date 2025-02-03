@@ -12,6 +12,7 @@ export default function Button(props) {
 
     const sizeMap = {
         "large": styles["button-large"],
+        "large-hero": styles["button-large-hero"],
         "medium": styles["button-medium"],
         "medium-link": styles["button-medium-link"],
         "small": styles["button-small"],
@@ -24,10 +25,12 @@ export default function Button(props) {
     // based on tyle extract the button style
     const buttonStyle = typeMap[type];
     const buttonSize = sizeMap[size];
+    const isButtonDisabled = props.disabled || null;
     return (
         <button className={`${styles.button} ${buttonStyle} ${buttonSize}`}
                 onClick={props.onClick || null}
-                type = {props.buttonType || null}>
+                type = {props.buttonType || null}
+                disabled = {isButtonDisabled}>
                     {text}
         </button>
     );

@@ -39,8 +39,8 @@ export default function Navbar() {
                         </a>
                     </li>
                     <li className = {styles["list-element"]}>
-                        <Link className = {`${karla.className} ${styles["list-element-text"]}`} href="/booking">
-                            Booking
+                        <Link className = {`${karla.className} ${styles["list-element-text"]}`} href="/bookings">
+                            Bookings
                         </Link>
                     </li>
                     <li className = {styles["list-element"]}>

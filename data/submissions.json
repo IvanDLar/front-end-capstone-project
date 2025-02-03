@@ -1,0 +1,12 @@
+[
+  {
+    "firstName": "Ivan",
+    "lastName": "Diaz",
+    "email": "banobano2012@gmail.com",
+    "phoneNumber": "1234567890",
+    "comment": "Testing my comment",
+    "availableDates": "4/2/2025",
+    "availableTimes": "16:00",
+    "guests": "10"
+  }
+]

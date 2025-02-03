@@ -17,11 +17,13 @@ export default function Hero() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
+          <a href="/book_table" className = {styles["booking-button-link"]}>
             <Button
                 text = "Book a table"
                 type = "primary"
-                size = "large"
+                size = "large-hero"
             />
+          </a>
         </div>
         <div className = {styles["hero-right-section"]}>
           <Image

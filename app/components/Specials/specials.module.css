@@ -23,6 +23,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap; /* Allows wrapping if needed */
-    gap: 1rem; /* Optional: Adds uniform spacing */
+    flex-wrap: wrap;
+    gap: 1rem;
 }

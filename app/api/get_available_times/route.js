@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 
+// Generate a dummy list of "available times" for booking a table.
 export async function GET(req) {
     const url = new URL(req.url);
     const date = url.searchParams.get('date');
@@ -30,8 +31,8 @@ export async function GET(req) {
         return result;
     };
 
-    const availableTimes = fetchAPI(new Date(date));
-    console.log(availableTimes);
+    const dateObject = new Date(date.trim());
+    const availableTimes = fetchAPI(dateObject);
 
     return NextResponse.json({
         availableTimes

@@ -8,5 +8,25 @@
     "availableDates": "4/2/2025",
     "availableTimes": "16:00",
     "guests": "10"
+  },
+  {
+    "firstName": "Roger",
+    "lastName": "Estofulus",
+    "email": "roger@gmail.com",
+    "phoneNumber": "1234567890",
+    "comment": "I am in love with this place!",
+    "availableDates": "7/2/2025",
+    "availableTimes": "18:00",
+    "guests": "3"
+  },
+  {
+    "firstName": "Mary",
+    "lastName": "Jane",
+    "email": "maryjane@email.com",
+    "phoneNumber": "1234567890",
+    "comment": "Transport from Airport to Hotel.",
+    "availableDates": "2/20/2025",
+    "availableTimes": "19:00",
+    "guests": "5"
   }
 ]

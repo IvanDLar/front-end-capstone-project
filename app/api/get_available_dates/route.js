@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 
 export async function GET() {
+
+  // Generate a list of 10 days in the MM/DD/YYYY format.
   const initializeTimes = () => {
     let dates = [];
     for (let i = 1; i <= 10; i++) {
@@ -10,9 +12,8 @@ export async function GET() {
       const day = date.getDate();
       const month = date.getMonth() + 1;
       const year = date.getFullYear();
-      dates.push(`${day}/${month}/${year}`);
+      dates.push(`${month}/${day}/${year}`);
     }
-    console.log(dates)
     return dates;
   };
 

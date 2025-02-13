@@ -61,10 +61,11 @@ export default function BookingForms () {
     await fetchData();
   }
 
-const getAvailableTimes = async () => {
+const getAvailableTimes = async (selectedDate) => {
   const fetchData = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/api/get_available_times?date=${chosenISODate}`);
+      console.log("Go get the times")
+      const response = await fetch(`http://localhost:3000/api/get_available_times?date=${selectedDate}`);
       const result = await response.json();
       setAvailableTimes(result);
     } catch(e) {
@@ -79,13 +80,18 @@ useEffect(() => {
 }, [])
 
 useEffect(() => {
-  getAvailableTimes()
-}, [availableDates])
+  if (availableDates?.dates?.length > 0) {
+    const defaultDate = availableDates.dates[0];
+    setChosenISODate(defaultDate);
+    getAvailableTimes(defaultDate);
+  }
+}, [availableDates]);
 
+// Handle the change of the Date on the forms.
 const handleDateChange = (e) => {
-  setChosenISODate(e.target.value);
-  getAvailableTimes();
-  console.log(availableTimes);
+  const newDate = e.target.value;
+  setChosenISODate(newDate);
+  getAvailableTimes(newDate);
 }
 
 const submitForm = async (e) => {
@@ -242,6 +248,7 @@ return (
                     className={`${styles["forms-box"]}`}>
               <option value="" disabled>Choose a date...</option>
               {
+                // Handle the change of available times.
                 availableTimes?.availableTimes?.length > 0 ? (
                   availableTimes.availableTimes.map((date, idx) => {
                       return (

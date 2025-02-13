@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 
 import { Karla } from 'next/font/google'
+import Button from "../Button/Button";
  
 // If loading a variable font, you don't need to specify the font weight
 const karla = Karla({ subsets: ['latin'] })
@@ -34,7 +35,7 @@ export default function Navbar() {
                         </a>
                     </li>
                     <li className = {styles["list-element"]}>
-                        <a className = {`${karla.className} ${styles["list-element-text"]}`} href="/#menu">
+                        <a className = {`${karla.className} ${styles["list-element-text"]}`} href="/menu">
                             Menu
                         </a>
                     </li>
@@ -44,8 +45,12 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li className = {styles["list-element"]}>
-                        <a className = {`${karla.className} ${styles["list-element-text"]}`} href="/">
-                            Log in
+                        <a className = {`${karla.className} ${styles["list-element-button"]}`} href="/book_table">
+                            <Button
+                                text = "Book Now"
+                                type = "primary"
+                                size = "small-navbar"
+                            />
                         </a>
                     </li>
                 </ul>

@@ -86,6 +86,13 @@
     box-shadow: 0px 1px 2px gray;
 }
 
+.button-small-navbar {
+    border-radius: 5px;
+    padding: 0.1rem 0.8rem;
+    font-size: var(--paragraph-font-size);
+    box-shadow: 0px 1px 2px gray;
+}
+
 button:disabled {
   border: 1px solid #999999;
   background-color: #cccccc;

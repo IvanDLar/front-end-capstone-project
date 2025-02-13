@@ -47,6 +47,10 @@
     font-size: var(--paragraph-font-size);
 }
 
+.hero-image {
+    border-radius: 5px;
+}
+
 .booking-button-link {
     display: flex;
     width: 100%;

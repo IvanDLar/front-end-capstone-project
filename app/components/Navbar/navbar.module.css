@@ -16,6 +16,13 @@
     cursor: pointer;
   }
 
+.list-element-button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
 .list-element-text:hover {
     transition: 0.5s;
     font-weight: bold;

@@ -16,6 +16,7 @@ export default function Button(props) {
         "medium": styles["button-medium"],
         "medium-link": styles["button-medium-link"],
         "small": styles["button-small"],
+        "small-navbar": styles["button-small-navbar"],
     };
 
     const text = props.text;

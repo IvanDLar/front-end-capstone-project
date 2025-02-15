@@ -2,8 +2,7 @@ import styles from "./menu.module.css";
 
 export default function MenuPage() {
 
-    // TODO: Add a mock API call for menu items, as if they came form a DB.
-  const menuData = [
+const menuData = [
     {
       sectionTitle: "Salads & Starters",
       items: [
@@ -57,29 +56,42 @@ export default function MenuPage() {
     },
   ];
 
-  return (
-    <main className={styles.container}>
-      <h1 className={styles.title}>Our Menu</h1>
+  // Loop over dummy DB contents to display the table:
+  const displayMenu = () => {
+    return (
+      menuData.map((section, idx) => (
+        <section className={styles.section} key={idx}>
+          <h2 className={styles.sectionTitle}>
+            {section.sectionTitle}
+          </h2>
 
-      {/* Loop over each section */}
-      {menuData.map((section, idx) => (
-        <section key={idx} className={styles.section}>
-          <h2 className={styles.sectionTitle}>{section.sectionTitle}</h2>
-
-          {/* Loop over items within each section */}
+          {/* Looping over items within each section */}
           <div className={styles.menuList}>
             {section.items.map((item, index) => (
               <div className={styles.menuItem} key={index}>
                 <div className={styles.menuItemHeader}>
-                  <h3 className={styles.menuItemTitle}>{item.title}</h3>
-                  <span className={styles.menuItemPrice}>{item.price}</span>
+                  <h3 className={styles.menuItemTitle}>
+                    {item.title}
+                  </h3>
+                  <span className={styles.menuItemPrice}>
+                    {item.price}
+                  </span>
                 </div>
-                <p className={styles.menuItemDescription}>{item.description}</p>
+                  <p className={styles.menuItemDescription}>
+                    {item.description}
+                  </p>
               </div>
             ))}
           </div>
         </section>
-      ))}
+      ))
+    );
+  }
+
+  return (
+    <main className={styles.container}>
+      <h1 className={styles.title}>Our Menu</h1>
+      { displayMenu() }
     </main>
   );
 }

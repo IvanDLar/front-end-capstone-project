@@ -20,6 +20,6 @@ export async function GET() {
 
     return NextResponse.json(bookings);
   } catch (error) {
-    return NextResponse.json({ error: "Error reading data." }, { status: 500 });
+    return NextResponse.json({ error: "Error reading booking data." }, { status: 500 });
   }
 }

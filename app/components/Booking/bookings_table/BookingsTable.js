@@ -21,6 +21,29 @@ export default function Bookings() {
     fetchBookings();
   }, []);
 
+  const displayBookings = () => {
+    return (
+      bookings.length > 0 ? (
+        bookings.map((booking, index) => (
+          <tr key={index}>
+            <td>{booking.firstName || "N/A"}</td>
+            <td>{booking.lastName || "N/A"}</td>
+            <td>{booking.email || "N/A"}</td>
+            <td>{booking.phoneNumber || "N/A"}</td>
+            <td>{booking.availableDates || "N/A"}</td>
+            <td>{booking.availableTimes || "N/A"}</td>
+            <td>{booking.guests || "N/A"}</td>
+            <td>{booking.comment || "N/A"}</td>
+          </tr>
+        ))
+      ) : (
+        <tr>
+          <td colSpan="8">No bookings available</td>
+        </tr>
+      )
+    );
+  }
+
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Bookings</h1>
@@ -38,24 +61,7 @@ export default function Bookings() {
           </tr>
         </thead>
         <tbody>
-          {bookings.length > 0 ? (
-            bookings.map((booking, index) => (
-              <tr key={index}>
-                <td>{booking.firstName}</td>
-                <td>{booking.lastName}</td>
-                <td>{booking.email}</td>
-                <td>{booking.phoneNumber}</td>
-                <td>{booking.availableDates}</td>
-                <td>{booking.availableTimes}</td>
-                <td>{booking.guests}</td>
-                <td>{booking.comment || "N/A"}</td>
-              </tr>
-            ))
-          ) : (
-            <tr>
-              <td colSpan="8">No bookings available</td>
-            </tr>
-          )}
+          {displayBookings()}
         </tbody>
       </table>
     </div>

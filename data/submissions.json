@@ -38,5 +38,15 @@
     "availableDates": "2/13/2025",
     "availableTimes": "15:00",
     "guests": "5"
+  },
+  {
+    "firstName": "Jeremias",
+    "lastName": "Smith",
+    "email": "testuser@mail.com",
+    "phoneNumber": "1234567890",
+    "comment": "",
+    "availableDates": "2/18/2025",
+    "availableTimes": "19:00",
+    "guests": "3"
   }
 ]

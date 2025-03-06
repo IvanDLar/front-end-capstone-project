@@ -7,7 +7,6 @@ import styles from "./booking-table.module.css";
 export default function Bookings() {
   const [bookings, setBookings] = useState([]);
 
-
   useEffect(() => {
     const fetchBookings = async () => {
       try {

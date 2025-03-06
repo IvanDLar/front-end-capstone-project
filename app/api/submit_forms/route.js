@@ -30,7 +30,6 @@ export async function POST(req) {
         }
 
         const updatedBookingFile = appendNewBooking(data);
-
         const updatedData = JSON.stringify(updatedBookingFile, null, 2);
 
         await outputFile(filePath, updatedData);
